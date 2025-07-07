@@ -417,7 +417,7 @@ class auto_re_t(idaapi.plugin_t):
     wanted_name = "Auto RE"
     wanted_hotkey = "Ctrl+Shift+M"
 
-    _PREFIX_NAME = 'mw_auto_'
+    _PREFIX_NAME = 'fn_autore_'
     _MIN_MAX_MATH_OPS_TO_ALLOW_RENAME = 10
 
     _CALLEE_NODE_NAMES = {
