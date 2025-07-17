@@ -465,8 +465,7 @@ class auto_re_t(idaapi.plugin_t):
         s = str(tags.keys())
         name = idaapi.get_ea_name(self.start_ea_of(fn))
         item = {'ea': self.start_ea_of(fn), 'name': name, 'tags': tags}
-        if not cmt or s not in cmt:
-            idaapi.set_func_cmt(fn, '%sTAGS: %s' % (cmt or '', s), True)
+        
         # self.mark_position(self.start_ea_of(fn), 'TAGS: %s' % s)
         for tag in tags:
             if tag not in self._data:
